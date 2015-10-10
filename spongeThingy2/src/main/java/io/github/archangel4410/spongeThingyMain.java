@@ -25,5 +25,14 @@ public class spongeThingyMain {
                 .build();
 
         game.getCommandDispatcher().register(this, myCommandSpec, "helloworld", "hello", "rndtp", "hi", "randomteleport");
+        CommandSpec myCommandSpec2 =CommandSpec.builder()
+                .description(Texts.of("Spawn Rabbit"))
+                .permission("myplugin.command.spawnrabbit")
+                .executor(new SpawnRabbitCommand())
+                .build();
+
+        game.getCommandDispatcher().register(this, myCommandSpec, "helloworld", "hello", "rndtp", "hi", "randomteleport");
     }
+
+
 }
