@@ -31,7 +31,7 @@ public class spongeThingyMain {
                 .executor(new SpawnRabbitCommand())
                 .build();
 
-        game.getCommandDispatcher().register(this, myCommandSpec, "helloworld", "hello", "rndtp", "hi", "randomteleport");
+        game.getCommandDispatcher().register(this, myCommandSpec, "spawnrabbit", "rabbit", "rabbitspawn", "rabbit!");
     }
 
 
