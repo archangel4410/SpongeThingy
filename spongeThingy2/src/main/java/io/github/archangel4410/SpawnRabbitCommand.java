@@ -1,5 +1,6 @@
 package io.github.archangel4410;
 
+import com.flowpowered.math.vector.Vector3d;
 import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.entity.EntityTypes;
 import org.spongepowered.api.entity.living.player.Player;
