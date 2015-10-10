@@ -37,5 +37,5 @@ public class ApocalypseCommand implements CommandExecutor {
         location.setBlockType(BlockTypes.LAVA);
         src.sendMessage(Texts.of("And if it doesn't get you the lava will."));
     }
-    return null;
+    return CommandResult.success();
 }}
