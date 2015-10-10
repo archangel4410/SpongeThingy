@@ -37,6 +37,7 @@ public class HelloWorldCommand implements CommandExecutor {
             src.sendMessage(Texts.of("Mwa-ha-ha-ha"));
             Location location = player.getLocation().getRelative(Direction.DOWN);
             location.setBlockType(BlockTypes.PUMPKIN);
+            src.sendMessage(Texts.of("It's midnight, so the magic carriage turned into a pumpkin."));
         }
         return null;
     }
