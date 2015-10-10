@@ -32,6 +32,12 @@ public class spongeThingyMain {
                 .build();
 
         game.getCommandDispatcher().register(this, myCommandSpec2, "spawnrabbit", "rabbit", "rabbitspawn", "rabbit!");
+        CommandSpec myCommandSpec3 =CommandSpec.builder()
+                .description(Texts.of("Apocalypse"))
+                .permission("myplugin.command.apocalypse")
+                .executor(new ApocalypseCommand())
+                .build();
+        game.getCommandDispatcher().register(this, myCommandSpec3, "apocalypse", "armageddon", "selfdestruct");
     }
 
 
