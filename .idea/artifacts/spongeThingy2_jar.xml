@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="spongeThingy2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/spongeThingy2_jar</output-path>
+    <root id="archive" name="spongeThingy2.jar">
+      <element id="module-output" name="spongeThingy2" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spongepowered/spongeapi/2.1-SNAPSHOT/edcc85a8a9ada8203fee40d27de1bb82f67b4d85/spongeapi-2.1-SNAPSHOT.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/4.0/f990a43d3725781b6db7cd0acf0a8b62dfd1649/guice-4.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

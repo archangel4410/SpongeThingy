@@ -24,6 +24,6 @@ public class spongeThingyMain {
                 .executor(new HelloWorldCommand())
                 .build();
 
-        game.getCommandDispatcher().register(this, myCommandSpec, "helloworld", "hello", "testhello", "hi");
+        game.getCommandDispatcher().register(this, myCommandSpec, "helloworld", "hello", "rndtp", "hi", "randomteleport");
     }
 }
