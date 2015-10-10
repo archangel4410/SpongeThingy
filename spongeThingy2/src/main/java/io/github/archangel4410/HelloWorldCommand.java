@@ -38,7 +38,15 @@ public class HelloWorldCommand implements CommandExecutor {
             Location location = player.getLocation().getRelative(Direction.DOWN);
             location.setBlockType(BlockTypes.PUMPKIN);
             src.sendMessage(Texts.of("It's midnight, so the magic carriage turned into a pumpkin."));
+            Extent extent = player.getLocation().getExtent();
+            // We need to create the entity
+            Optional<Entity> optional = extent.createEntity(EntityTypes.RABBIT,
+                    player.getLocation().getPosition());
+            if (optional.isPresent()) {
+                extent.spawnEntity(optional.get(), Cause.of(player));
+            }
+            src.sendMessage(Texts.of("Here's a rabbit for your time."));
         }
-        return null;
+        return CommandResult.success();
     }
 }
